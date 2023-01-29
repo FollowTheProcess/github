@@ -32,6 +32,7 @@ jobs:
           pre-commit autoupdate
           cd python
           pre-commit autoupdate
+          cd ..
 
       - name: Raise PR if Hooks Changed
         uses: peter-evans/create-pull-request@v4
