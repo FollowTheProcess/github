@@ -1,4 +1,4 @@
-name: CI
+name: Sync
 
 on:
   pull_request:
@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  release:
-    name: Release
+  sync:
+    name: Synchronise Files
     runs-on: ubuntu-latest
 
     steps:
