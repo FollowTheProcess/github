@@ -1,25 +1,12 @@
 group:
-  # Dependabot in Python repos
+  # Python repos
   - files:
       - source: python/dependabot.yml
         dest: .github/dependabot.yml
 
-    repos: |
-      FollowTheProcess/pytoil
-      FollowTheProcess/madonna
-
-  # .gitignore in Python repos
-  - files:
       - source: python/.gitignore
         dest: .gitignore
 
-    repos: |
-      FollowTheProcess/pytoil
-      FollowTheProcess/madonna
-      FollowTheProcess/python_copier
-
-  # Pre-commit in python repos
-  - files:
       - source: python/.pre-commit-config.yaml
         dest: .pre-commit-config.yaml
 
@@ -27,22 +14,11 @@ group:
       FollowTheProcess/pytoil
       FollowTheProcess/madonna
 
-  # Dependabot in Go repos
+  # Go repos
   - files:
       - source: go/dependabot.yml
         dest: .github/dependabot.yml
 
-    repos: |
-      FollowTheProcess/spok
-      FollowTheProcess/tag
-      FollowTheProcess/msg
-      FollowTheProcess/goignore
-      FollowTheProcess/collections
-      FollowTheProcess/py
-      FollowTheProcess/semver
-
-  # .gitignore in Go repos
-  - files:
       - source: go/.gitignore
         dest: .gitignore
 
