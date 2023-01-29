@@ -16,11 +16,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    # Only release on new tag
-    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
 
     steps:
       - name: Checkout Code
@@ -31,12 +26,3 @@ jobs:
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
           COMMIT_PREFIX: "Sync: "
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-        with:
-          draft: false
-          prerelease: false
