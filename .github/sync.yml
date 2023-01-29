@@ -95,3 +95,10 @@ FollowTheProcess/go_copier:
 
   - source: git/.gitattributes
     destination: project/.gitattributes
+
+FollowTheProcess/rust_copier:
+  - source: rust/.gitignore
+    destination: project/.gitignore
+
+  - source: git/.gitattributes
+    destination: project/.gitattributes
