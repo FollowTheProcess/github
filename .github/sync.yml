@@ -62,6 +62,9 @@ FollowTheProcess/python_copier:
   - source: python/.pre-commit-config.yaml
     dest: project/.pre-commit-config.yaml
 
+  - source: github/
+    dest: project/.github
+
   - source: git/.gitattributes
     dest: project/.gitattributes
 
@@ -69,9 +72,15 @@ FollowTheProcess/go_copier:
   - source: go/.gitignore
     dest: project/.gitignore
 
+  - source: github/
+    dest: project/.github
+
   - source: git/.gitattributes
     dest: project/.gitattributes
 
 FollowTheProcess/rust_copier:
   - source: git/.gitattributes
     dest: project/.gitattributes
+
+  - source: github/
+    dest: project/.github
