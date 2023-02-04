@@ -73,8 +73,5 @@ FollowTheProcess/go_copier:
     dest: project/.gitattributes
 
 FollowTheProcess/rust_copier:
-  - source: rust/.gitignore
-    dest: project/.gitignore
-
   - source: git/.gitattributes
     dest: project/.gitattributes
