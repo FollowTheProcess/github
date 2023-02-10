@@ -2,7 +2,7 @@ name: Update pre-commit
 
 on:
   schedule:
-    - cron: "0 3 * * *" # 03:00AM UTC every day
+    - cron: "0 3 * * 1" # 03:00AM UTC every Monday
 
 env:
   PYTHON_VERSION: 3.11
